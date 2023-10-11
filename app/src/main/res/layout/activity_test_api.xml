@@ -3,12 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-<<<<<<< HEAD
     android:layout_height="match_parent">
-=======
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
->>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
