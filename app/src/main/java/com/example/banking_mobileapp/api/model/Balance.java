@@ -1,4 +1,4 @@
-package com.example.testmvmm.api.model;
+package com.example.banking_mobileapp.api.model;
 
 import com.google.gson.annotations.SerializedName;
 

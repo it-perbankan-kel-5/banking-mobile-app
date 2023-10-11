@@ -1,8 +1,8 @@
-package com.example.testmvmm.api;
+package com.example.banking_mobileapp.api;
 
+import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import androidx.lifecycle.LiveData;
 
 import com.example.testmvmm.api.model.Logout;
 import com.example.testmvmm.api.repository.LogoutRepository;

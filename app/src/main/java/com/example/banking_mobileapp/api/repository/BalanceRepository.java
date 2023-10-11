@@ -1,4 +1,4 @@
-package com.example.testmvmm.api.repository;
+package com.example.banking_mobileapp.api.repository;
 
 import com.example.testmvmm.api.client.RetrofitClientInstance;
 import com.example.testmvmm.api.model.Logout;

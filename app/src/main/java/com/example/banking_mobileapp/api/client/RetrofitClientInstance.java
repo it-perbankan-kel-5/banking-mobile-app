@@ -1,4 +1,4 @@
-package com.example.testmvmm.api.client;
+package com.example.banking_mobileapp.api.client;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
