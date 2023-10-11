@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -31,19 +32,77 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/edit_nama"
-        android:layout_width="305dp"
-        android:layout_height="64dp"
-        android:layout_gravity="center"
-        android:background="@drawable/background_edittext"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
-    <View
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="446dp">
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="305dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="First Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.209"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="305dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.403"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="305dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.599"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="305dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Address"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.801"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <Button
         android:id="@+id/btn_submitname"

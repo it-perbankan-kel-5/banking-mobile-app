@@ -36,10 +36,10 @@ public class TransferActivity extends AppCompatActivity {
 
         try {
             token = getToken();
-            Log.d("EditProfile-Token", "Token: " + token);
+            Log.d("EditProfileActivity-Token", "Token: " + token);
         } catch (NullPointerException exception) {
             token = "null";
-            Log.d("EditProfile" + " Error", "onCreate (Error): " + exception.getMessage());
+            Log.d("EditProfileActivity" + " Error", "onCreate (Error): " + exception.getMessage());
         }
 
         transferViewModel.getResponse().observe(this, s -> {

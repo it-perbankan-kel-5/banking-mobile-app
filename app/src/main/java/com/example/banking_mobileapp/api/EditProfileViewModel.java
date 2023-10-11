@@ -11,10 +11,12 @@ import com.example.banking_mobileapp.api.response.IResponse;
 
 public class EditProfileViewModel extends ViewModel {
     private final EditProfileRepository editProfileRepository;
+    private MutableLiveData<Boolean> status;
     private MutableLiveData<String> response;
     public EditProfileViewModel() {
         editProfileRepository = new EditProfileRepository();
         response = new MutableLiveData<>();
+        status = new MutableLiveData<>();
     }
 
     public void editProfile(String token, String fristName,
@@ -25,16 +27,22 @@ public class EditProfileViewModel extends ViewModel {
             @Override
             public void onResponse(EditProfile editProfile) {
                 response.postValue(editProfile.getMessage());
+                status.postValue(Boolean.TRUE);
             }
 
             @Override
             public void onFailure(Throwable t) {
                 response.postValue("Failed: " + t.toString());
+                status.postValue(Boolean.TRUE);
             }
         });
     }
 
     public LiveData<String> getResponse() {
         return response;
+    }
+
+    public LiveData<Boolean> getStatus() {
+        return status;
     }
 }

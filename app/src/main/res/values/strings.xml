@@ -29,8 +29,8 @@
     <string name="profile">Profile Detail</string>
     <string name="transfer">Transfer</string>
     <string name="edit_profile">Edit Profile</string>
-    <string name="first_name">First name</string>
-    <string name="last_name">Last name</string>
+    <string name="first_name">Email</string>
+    <string name="last_name">Password</string>
     <string name="phone_number">Phone number</string>
     <string name="address">Address</string>
     <string name="save">Save</string>

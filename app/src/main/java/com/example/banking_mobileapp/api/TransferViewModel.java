@@ -16,6 +16,7 @@ public class TransferViewModel extends ViewModel {
 
     private final MutableLiveData<LinkedHashMap<String, String>> response = new MutableLiveData<>();
     private final MutableLiveData<String> result = new MutableLiveData<>();
+    private final MutableLiveData<Boolean> transferStatus = new MutableLiveData<>();
     private final TransferRepository transferRepository;
 
     public TransferViewModel() {
@@ -34,11 +35,13 @@ public class TransferViewModel extends ViewModel {
                 data.put("TRANSFER_AMOUNT", transfer.getTransfer_amount());
 
                 response.postValue(data);
+                transferStatus.postValue(Boolean.TRUE);
             }
 
             @Override
             public void onFailure(Throwable t) {
                 result.postValue("Failed: " + t.getLocalizedMessage());
+                transferStatus.postValue(Boolean.FALSE);
             }
         });
     }
@@ -49,5 +52,9 @@ public class TransferViewModel extends ViewModel {
 
     public LiveData<String> getResult() {
         return result;
+    }
+
+    public LiveData<Boolean> getTransferStatus() {
+        return transferStatus;
     }
 }
