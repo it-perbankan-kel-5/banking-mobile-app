@@ -16,7 +16,10 @@ public class TransferViewModel extends ViewModel {
 
     private final MutableLiveData<LinkedHashMap<String, String>> response = new MutableLiveData<>();
     private final MutableLiveData<String> result = new MutableLiveData<>();
+<<<<<<< HEAD
     private final MutableLiveData<Boolean> transferStatus = new MutableLiveData<>();
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
     private final TransferRepository transferRepository;
 
     public TransferViewModel() {
@@ -35,13 +38,19 @@ public class TransferViewModel extends ViewModel {
                 data.put("TRANSFER_AMOUNT", transfer.getTransfer_amount());
 
                 response.postValue(data);
+<<<<<<< HEAD
                 transferStatus.postValue(Boolean.TRUE);
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
             }
 
             @Override
             public void onFailure(Throwable t) {
                 result.postValue("Failed: " + t.getLocalizedMessage());
+<<<<<<< HEAD
                 transferStatus.postValue(Boolean.FALSE);
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
             }
         });
     }
@@ -53,8 +62,11 @@ public class TransferViewModel extends ViewModel {
     public LiveData<String> getResult() {
         return result;
     }
+<<<<<<< HEAD
 
     public LiveData<Boolean> getTransferStatus() {
         return transferStatus;
     }
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
 }

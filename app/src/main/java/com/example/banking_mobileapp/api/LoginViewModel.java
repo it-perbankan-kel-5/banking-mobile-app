@@ -13,7 +13,10 @@ import java.util.LinkedHashMap;
 
 public class LoginViewModel extends ViewModel {
     private final MutableLiveData<String> mLoginResultMutableData = new MutableLiveData<>();
+<<<<<<< HEAD
     private final MutableLiveData<Boolean> isLoggin = new MutableLiveData<>();
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
     private final MutableLiveData<LinkedHashMap<String, String>> mLoginResponseMutableData = new MutableLiveData<>();
     private final LoginRepository loginRepository;
 
@@ -27,6 +30,10 @@ public class LoginViewModel extends ViewModel {
             @Override
             public void onResponse(Login loginResponse) {
                 mLoginResultMutableData.postValue("Login Success");
+<<<<<<< HEAD
+=======
+
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
                 LinkedHashMap<String, String> responses = new LinkedHashMap<>();
 
                 responses.put("ID", loginResponse.getId());
@@ -34,12 +41,18 @@ public class LoginViewModel extends ViewModel {
                 responses.put("MESSAGE", loginResponse.getMessage());
 
                 mLoginResponseMutableData.postValue(responses);
+<<<<<<< HEAD
                 isLoggin.postValue(Boolean.TRUE);
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
             }
 
             @Override
             public void onFailure(Throwable t) {
+<<<<<<< HEAD
                 isLoggin.postValue(Boolean.FALSE);
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
                 mLoginResultMutableData.postValue("Login Failed: " + t.getMessage());
             }
         });
@@ -51,8 +64,11 @@ public class LoginViewModel extends ViewModel {
     public LiveData<LinkedHashMap<String, String>> getLoginResponse() {
         return mLoginResponseMutableData;
     }
+<<<<<<< HEAD
 
     public LiveData<Boolean> getLoginStatus() {
         return isLoggin;
     }
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
 }

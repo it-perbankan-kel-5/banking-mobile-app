@@ -11,12 +11,18 @@ import com.example.banking_mobileapp.api.response.IResponse;
 
 public class EditProfileViewModel extends ViewModel {
     private final EditProfileRepository editProfileRepository;
+<<<<<<< HEAD
     private MutableLiveData<Boolean> status;
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
     private MutableLiveData<String> response;
     public EditProfileViewModel() {
         editProfileRepository = new EditProfileRepository();
         response = new MutableLiveData<>();
+<<<<<<< HEAD
         status = new MutableLiveData<>();
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
     }
 
     public void editProfile(String token, String fristName,
@@ -27,13 +33,19 @@ public class EditProfileViewModel extends ViewModel {
             @Override
             public void onResponse(EditProfile editProfile) {
                 response.postValue(editProfile.getMessage());
+<<<<<<< HEAD
                 status.postValue(Boolean.TRUE);
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
             }
 
             @Override
             public void onFailure(Throwable t) {
                 response.postValue("Failed: " + t.toString());
+<<<<<<< HEAD
                 status.postValue(Boolean.TRUE);
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
             }
         });
     }
@@ -41,8 +53,11 @@ public class EditProfileViewModel extends ViewModel {
     public LiveData<String> getResponse() {
         return response;
     }
+<<<<<<< HEAD
 
     public LiveData<Boolean> getStatus() {
         return status;
     }
+=======
+>>>>>>> 595092a8f333b30686bee47dff7f704d430f1ed4
 }
