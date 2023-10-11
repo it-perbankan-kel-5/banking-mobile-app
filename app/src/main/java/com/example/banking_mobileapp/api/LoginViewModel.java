@@ -1,12 +1,12 @@
-package com.example.testmvmm.api;
+package com.example.banking_mobileapp.api;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.testmvmm.api.repository.LoginRepository;
-import com.example.testmvmm.api.parameter.LoginParam;
 import com.example.testmvmm.api.model.Login;
+import com.example.testmvmm.api.parameter.LoginParam;
+import com.example.testmvmm.api.repository.LoginRepository;
 import com.example.testmvmm.api.response.IResponse;
 
 import java.util.LinkedHashMap;

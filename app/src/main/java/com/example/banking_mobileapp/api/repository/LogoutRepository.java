@@ -1,11 +1,9 @@
-package com.example.testmvmm.api.repository;
+package com.example.banking_mobileapp.api.repository;
 
-import android.util.Log;
-
-import com.example.testmvmm.api.response.IResponse;
-import com.example.testmvmm.api.service.ApiService;
 import com.example.testmvmm.api.client.RetrofitClientInstance;
 import com.example.testmvmm.api.model.Logout;
+import com.example.testmvmm.api.response.IResponse;
+import com.example.testmvmm.api.service.ApiService;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -1,4 +1,4 @@
-package com.example.testmvmm.api.client;
+package com.example.banking_mobileapp.api.client;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

@@ -1,9 +1,9 @@
-package com.example.testmvmm.api.service;
+package com.example.banking_mobileapp.api.service;
 
 import com.example.testmvmm.api.model.Balance;
+import com.example.testmvmm.api.model.Login;
 import com.example.testmvmm.api.model.Logout;
 import com.example.testmvmm.api.parameter.LoginParam;
-import com.example.testmvmm.api.model.Login;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
