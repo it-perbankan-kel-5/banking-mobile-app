@@ -2,56 +2,50 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="410dp"
+    android:layout_height="150dp"
+    android:background="#0CFDFD"
     tools:context=".MainActivity">
+    
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo" />
+    
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Rakamin Banking App"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="100dp"
+        android:text="Selamat Pagi, Ocha Putri"
+        android:textStyle="bold"
+        android:textSize="40px"/>
 
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#0CFDFD"
-        android:orientation="horizontal"
-        app:layout_anchor="@+id/textView"
-        app:layout_anchorGravity="top|center">
-
-        <ImageView
-            android:id="@+id/image1"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/logo" />
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"
-            android:text="Rakamin Banking App"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="180dp"
-            android:layout_height="22dp"
-            android:layout_marginTop="60dp"
-            android:text="Selamat Pagi, Ocha Putri"
-            android:textSize="40px"
-            android:textStyle="bold"
-            app:layout_anchor="@+id/linearLayout"
-            app:layout_anchorGravity="center"/>
-    </LinearLayout>
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageButton
-            android:id="@+id/transfer"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/logo"/>
-    </androidx.appcompat.widget.AppCompatImageButton>
-
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/img"/>
+    
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="150dp"
+        android:text="Sudahkah menabung hari ini ?"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
