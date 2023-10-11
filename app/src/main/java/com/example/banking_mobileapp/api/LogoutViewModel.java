@@ -4,9 +4,9 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.testmvmm.api.model.Logout;
-import com.example.testmvmm.api.repository.LogoutRepository;
-import com.example.testmvmm.api.response.IResponse;
+import com.example.banking_mobileapp.api.model.Logout;
+import com.example.banking_mobileapp.api.repository.LogoutRepository;
+import com.example.banking_mobileapp.api.response.IResponse;
 
 public class LogoutViewModel extends ViewModel {
     private final MutableLiveData<String> mLogoutResultMutableData = new MutableLiveData<>();
