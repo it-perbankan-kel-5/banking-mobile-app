@@ -18,4 +18,12 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <string name="email_address_login">Email Address</string>
+    <string name="password_login">Password</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="email_log">bernadette.predovic@example.net</string>
+    <string name="password_log">906503</string>
+    <string name="process">Process</string>
 </resources>

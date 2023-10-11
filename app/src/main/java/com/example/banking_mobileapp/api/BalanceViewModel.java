@@ -4,9 +4,9 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.testmvmm.api.model.Balance;
-import com.example.testmvmm.api.repository.BalanceRepository;
-import com.example.testmvmm.api.response.IResponse;
+import com.example.banking_mobileapp.api.model.Balance;
+import com.example.banking_mobileapp.api.repository.BalanceRepository;
+import com.example.banking_mobileapp.api.response.IResponse;
 
 import java.util.LinkedHashMap;
 

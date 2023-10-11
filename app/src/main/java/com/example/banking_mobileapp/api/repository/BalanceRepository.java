@@ -1,9 +1,9 @@
 package com.example.banking_mobileapp.api.repository;
 
-import com.example.testmvmm.api.client.RetrofitClientInstance;
-import com.example.testmvmm.api.model.Logout;
-import com.example.testmvmm.api.response.IResponse;
-import com.example.testmvmm.api.service.ApiService;
+import com.example.banking_mobileapp.api.client.RetrofitClientInstance;
+import com.example.banking_mobileapp.api.model.Logout;
+import com.example.banking_mobileapp.api.response.IResponse;
+import com.example.banking_mobileapp.api.service.ApiService;
 
 import retrofit2.Call;
 import retrofit2.Callback;
