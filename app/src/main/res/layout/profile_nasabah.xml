@@ -33,7 +33,7 @@
             <!--    AKUN-->
             <TextView
                 android:id="@+id/sub_Title_Akun"
-                style="@style/Theme.RakamingBankingApp"
+                style="@style/Theme.Banking_MobileApp"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_gravity="left"
@@ -80,7 +80,7 @@
             <!--    KEAMANANAN-->
             <TextView
                 android:id="@+id/sub_Title_Keamanan"
-                style="@style/Theme.RakamingBankingApp"
+                style="@style/Theme.Banking_MobileApp"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_gravity="left"

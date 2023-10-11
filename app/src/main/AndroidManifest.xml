@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Banking_MobileApp"
         tools:targetApi="31">
         <activity
+            android:name=".api.test.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".api.test.TransferActivity"
+            android:exported="false" />
+        <activity
             android:name=".TestApi"
             android:exported="true"
             android:theme="@style/Theme.Banking_MobileApp.NoActionBar">
