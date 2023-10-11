@@ -25,5 +25,16 @@
     <string name="logout">Logout</string>
     <string name="email_log">bernadette.predovic@example.net</string>
     <string name="password_log">906503</string>
-    <string name="process">Process</string>
+    <string name="process">Balance Detail</string>
+    <string name="profile">Profile Detail</string>
+    <string name="transfer">Transfer</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="address">Address</string>
+    <string name="save">Save</string>
+    <string name="email">Email</string>
+    <string name="transfer_amount">Transfer amount</string>
+    <string name="account_pin">Account Pin</string>
 </resources>

@@ -16,8 +16,7 @@
         tools:targetApi="31">
         <activity
             android:name=".LoginFragment"
-            android:exported="true"
-            android:theme="@style/Theme.Banking_MobileApp.NoActionBar">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
